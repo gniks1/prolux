@@ -326,7 +326,20 @@ form button[type="submit"]:hover {
 
   .product-item img {
     width: 100%;
+  }@media (max-width: 768px) {
+    .navbar ul {
+      display: none;
+    }
+    .navbar-icon {
+      display: block;
+    }
+    .navbar-icon a {
+      display: block;
+      padding: 1rem;
+      text-align: center;
+    }
   }
+  
 }
 .whatsapp-float {
   position: fixed;
