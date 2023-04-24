@@ -266,3 +266,55 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
   background-color: #023e8a;
 }
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-image img {
+    display: none;
+  }
+
+  #about .about-content,
+  #contact .contact-content {
+    text-align: center;
+  }
+
+  #about .about-image img,
+  #contact .contact-image img {
+    display: none;
+  }
+
+  .product-item {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .product-item img {
+    width: 100%;
+  }
+}
