@@ -84,31 +84,40 @@ nav ul li a:hover {
   padding: 100px 50px;
   background-image: url('hero_bg.jpg');
   background-size: cover;
-  color: #c0b283;
+  background-color: #fff;
   text-align: center;
 }
 
+#hero h1 {
+  background: linear-gradient(to right, #ffd700, #ffdab9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
+}
+
+
 .hero-content {
-  flex-basis: 50%;
-  max-width: 500px;
+  flex-basis: 80%;
+  max-width: 650px;
   margin-bottom: 50px;
 }
 
 .hero-content h1 {
-  font-size: 48px;
+  font-size: 80px;
   margin-bottom: 20px;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
 
 .hero-content p {
-  font-size: 20px;
+  font-size: 50px;
   margin-bottom: 30px;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
 
 .hero-image img {
-  flex-basis: 40%;
-  max-width: 500px;
+  flex-basis: 20%;
+  max-width: 350px;
 }
 
 .cta-button {
@@ -177,7 +186,7 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
+  max-width: 100000px;
   margin: 0 auto;
 }
 
@@ -318,4 +327,17 @@ form button[type="submit"]:hover {
   .product-item img {
     width: 100%;
   }
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 9999;
 }
