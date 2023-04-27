@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    
   </head>
   <body>
     <header>
@@ -23,7 +25,7 @@
               <li><a href="#">Home</a></li>
               <li><a href="products.html">Products</a></li>
               <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
         
       </nav>
@@ -45,9 +47,39 @@
         <p>Our commitment to customer satisfaction is reflected in our excellent customer service and dedication to quality craftsmanship.</p>
         <a href="#" class="cta-button">Shop Now</a>
       </div>
-      <div class="about-image">
-        <img src="about_image.png" alt="About Us">
+      <div id="slideshow">
+        <img src="images/scroll/scroll1.jpeg">
+        <img src="images/scroll/scroll2.jpeg">
+        <img src="images/scroll/scroll3.jpeg">
+        <img src="images/scroll/scroll4.jpeg">
+        <img src="images/scroll/scroll5.jpg">
+        <img src="images/scroll/scroll6.jpeg">
+        <img src="images/scroll/scroll7.jpeg">
+        <img src="images/scroll/scroll8.jpeg">
       </div>
+      
+      <script>
+        var slideIndex = 0;
+        showSlides();
+      
+        function showSlides() {
+          var i;
+          var slides = document.getElementById("slideshow").getElementsByTagName("img");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+      </script>
+      
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
     </section>
     <section id="products">
       <h2>Featured Products</h2>
@@ -78,7 +110,7 @@
     </section>
     <section id="contact">
 		<div class="contact-content">
-		  <h2><a href="https://api.whatsapp.com/send?phone=9354192982" target="_blank" rel="noopener noreferrer">
+		  <h2><a href="https://api.whatsapp.com/send?phone=8090909589" target="_blank" rel="noopener noreferrer">
         <img src="clipart347357.png" alt="WhatsApp Logo" width="24" height="24">
         Contact us
         </a></h2>
