@@ -6,13 +6,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #f7f7f7;
+  background-color: white;
 }
 
 a {
@@ -104,20 +105,42 @@ nav ul li a:hover {
 }
 
 .hero-content h1 {
-  font-size: 80px;
+  font-size: 60px;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 2px rgba(226, 17, 17, 0.3);
 }
 
 .hero-content p {
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 30px;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 2px rgba(202, 20, 20, 0.3);
 }
 
 .hero-image img {
-  flex-basis: 20%;
-  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+}
+#hero2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.hero-image2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+}
+
+.hero-image2 img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .cta-button {
@@ -169,9 +192,63 @@ nav ul li a:hover {
   width: 100%;
   height: auto;
 }
+#company-info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  background-color: white;
+}
+
+#company-info h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#company-info p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #company-info {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  #company-info h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  #company-info p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+#our-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+}
+
+.team-member p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: goldenrod;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+}
 
 #products {
-  background-color: #f8f8f8;
+  background-color: white;
   padding: 80px 0;
   text-align: center;
 }
@@ -183,7 +260,7 @@ nav ul li a:hover {
 
 .product-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   max-width: 100000px;
