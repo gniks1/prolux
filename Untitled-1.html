@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Slideshow Example</title>
+    <link rel="stylesheet" href="ss.css">
+    <style>
+      #slideshow {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+      }
+      #slideshow img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slideshow"></div>
+    <script src="sss.js"></script>
+    <script>
+      // get all images from the "images" folder
+      var images = [];
+      for (var i = 2; i <= 100; i++) {
+        images.push('images/image' + i.toString().padStart(3, '0') + '.jpg');
+      }
+
+      // create the slideshow
+      var slideshow = document.getElementById('slideshow');
+      var currentImageIndex = 0;
+      var interval = setInterval(function() {
+        var img = document.createElement('img');
+        img.src = images[currentImageIndex];
+        slideshow.innerHTML = '';
+        slideshow.appendChild(img);
+        currentImageIndex++;
+        if (currentImageIndex === images.length) {
+          currentImageIndex = 0;
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>

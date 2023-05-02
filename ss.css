@@ -1,0 +1,42 @@
+.slideshow {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow img.active {
+  opacity: 1;
+}
+
+.slideshow .controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: flex;
+}
+
+.slideshow .controls button {
+  margin: 0 5px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.slideshow .controls button.active {
+  color: #fff;
+  background-color: #000;
+}
